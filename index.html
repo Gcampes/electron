@@ -56,6 +56,15 @@
           -ms-user-select: none;
           user-select: none;
       }
+
+      input[type="text"]{
+        margin-top: 10px;
+        height: 30px;
+      }
+
+      input[type="text"]:focus{
+       outline: none;
+      }
     </style>
 
     <section id="presentation">
@@ -67,11 +76,16 @@
     </section>
     <section>
       <div id="button">I do Nothing.</div>
+      <input type="text" name="name" placeholder="Neither do I" id="input">
     </section>
 
     <script type="text/javascript">
       document.getElementById("button").addEventListener('click', function(){
         document.getElementById("button").textContent = "I lied.";
+      })
+
+      document.getElementById("input").addEventListener('click', function(){
+        document.getElementById("input").placeholder = "I am a Liar too";
       })
     </script>
   </body>
