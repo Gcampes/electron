@@ -15,16 +15,6 @@
         margin: 0px;
       }
 
-      #button{
-        border: 0;
-        padding: 10px;
-        color: #ededed;
-        background-color: #3992e7;
-        width: 100px;
-        margin: 0px auto;
-        cursor: pointer;
-      }
-
       #button:hover{
         background-color: #066ed1;
       }
@@ -34,7 +24,7 @@
       }
 
       h1{
-        background-color: #282046;
+        background-color: #1b4a39;
         color: #ECECEC;
         padding: 20px;
         font-size: 70px;
@@ -56,37 +46,14 @@
           -ms-user-select: none;
           user-select: none;
       }
-
-      input[type="text"]{
-        margin-top: 10px;
-        height: 30px;
-      }
-
-      input[type="text"]:focus{
-       outline: none;
-      }
     </style>
 
     <section id="presentation">
-      <h1>First App</h1>
-      <h3>This is my first electron App.</h3>
+      <h1>This is a Different Page \o/</h1>
+      <h3>You clicked the button! he was a liar.</h3>
     </section>
     <section id="counter">
-      <h2 id="counter-text">Electron is Amazing.</h2>
+      <h2 id="counter-text">Electron is still Amazing.</h2>
     </section>
-    <section>
-      <div id="button">I do Nothing.</div>
-      <input type="text" name="name" placeholder="Neither do I" id="input">
-    </section>
-
-    <script type="text/javascript">
-      document.getElementById("button").addEventListener('click', function(){
-        location.href = "./link.html";
-      })
-
-      document.getElementById("input").addEventListener('click', function(){
-        document.getElementById("input").placeholder = "Lied";
-      })
-    </script>
   </body>
 </html>
